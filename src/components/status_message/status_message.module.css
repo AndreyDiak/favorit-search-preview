@@ -1,0 +1,65 @@
+.message {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.message strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.message p {
+  margin-top: 4px;
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}
+
+.action {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.loading {
+  background: var(--accent-soft);
+}
+
+.error {
+  background: var(--danger-bg);
+  border-color: #f3c9d0;
+}
+
+.error .body {
+  text-align: center;
+}
+
+.error strong {
+  color: var(--danger);
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  border: 2px solid #c5dbef;
+  border-top-color: var(--accent-deep);
+  border-radius: 50%;
+  flex: none;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

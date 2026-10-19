@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--line);
+  background: #fbfdff;
+  color: var(--ink);
+  border-radius: 14px;
+  padding: 14px 16px;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(126, 173, 216, 0.25);
+}
+
+.hint {
+  min-height: 1.2em;
+  color: var(--muted);
+  font-size: 14px;
+}

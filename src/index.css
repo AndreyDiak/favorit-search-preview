@@ -1,0 +1,65 @@
+:root {
+  --bg: #f3f7fb;
+  --surface: #ffffff;
+  --ink: #1d3550;
+  --muted: #5d7690;
+  --line: #d5e4f2;
+  --accent: #7eadd8;
+  --accent-deep: #3f78ad;
+  --accent-soft: #e7f2fb;
+  --danger: #9a4e60;
+  --danger-bg: #fdecef;
+  --shadow: 0 12px 32px rgba(63, 120, 173, 0.08);
+  color: var(--ink);
+  background: var(--bg);
+  font: 16px/1.45 "Segoe UI", "Helvetica Neue", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--accent-soft);
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-deep);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
